@@ -24,7 +24,12 @@ class Apptheme{
       shape: CircleBorder(side: BorderSide(width: 4 , color: white)),
       backgroundColor: primary,
       foregroundColor: white
-    )
+    ),
+    textTheme: TextTheme(
+      titleMedium: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: black)),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(backgroundColor: primary)
+      )
     
 
   );
