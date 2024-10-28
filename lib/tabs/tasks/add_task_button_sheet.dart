@@ -1,7 +1,8 @@
-import 'dart:js_util';
+//import 'dart:js_util';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:todo/models/taskmodel.dart';
 import 'package:todo/widgets/default_elevated_button.dart';
 import 'package:todo/widgets/textfield.dart';
 
@@ -88,6 +89,12 @@ class _AddTaskButtSheetState extends State<AddTaskButtSheet> {
     );
   }
   void addTask(){
-    print('tasl added');
+    TaskModel(
+     
+     title: tasktitle.text, 
+     description: taskdescription.text,
+     date: selectedtime, 
+    
+    );
   }
 }
